@@ -81,4 +81,30 @@
     padding-top: calc(var(--_space, 1.76923rem)*1);
     padding-bottom: calc(var(--_space, 1.76923rem)*1);
   }
+
+  .c-site-branding__title {
+    font-size: 48px;
+  }
+}
+
+
+.home .c-section:first-child {
+  padding-top: 0;
+}
+
+body.l-body {
+  position: relative;
+  background-color: var( --accent-color );
+  &:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -25%;
+    z-index: 0;
+  }
 }
