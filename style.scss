@@ -1,0 +1,30 @@
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: var( --accent-color, #cd162c );
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.spinner {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+}
