@@ -46,7 +46,7 @@ add_action(
 		wp_enqueue_script(
 			'smdemo01-script',
 			MY_SNOW_MONKEY_URL . '/scripts.js',
-			null,
+			[ 'jquery' ],
 			filemtime( plugin_dir_path( __FILE__ ) ),
 			false
 		);
@@ -60,7 +60,7 @@ add_action(
 	'wp_body_open',
 	function() {
 		?>
-		<div id="loading">
+		<div id="page-loading">
 			<div class="spinner"></div>
 		</div>
 		<?php

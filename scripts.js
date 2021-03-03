@@ -1,4 +1,4 @@
 window.onload = function() {
-  const spinner = document.getElementById('loading');
+  const spinner = document.getElementById('page-loading');
   spinner.classList.add('loaded');
 }
